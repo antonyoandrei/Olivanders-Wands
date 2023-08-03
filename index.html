@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer type="module" src="product_elements.js"></script>
+  <script defer src="script.js"></script>
+  <script defer type="module" src="slideshow.js"></script>
+  <script src="https://kit.fontawesome.com/f7c24dde49.js" crossorigin="anonymous"></script>
+  <title>Ollivanders Wand Shop</title>
+</head>
+
+<body>
+  <header>
+    <div class="container header__container flex justify-center">
+      <img src="assets/logo_horizontal.png" alt="Ollivanders Wand Shop Logo" class="logo">
+    </div>
+  </header>
+  <main>
+    <!-- Product Slider -->
+    <div class="main_container container">
+      <section class="product">
+        <form action="#" class="product__form" data-type="product-form">
+          <input type="hidden" name="id" data-variant-id="4f9ba968-5f64-4fc9-bed3-e1cbb8a0216d">
+          <div class="product__media">
+            <div class="product_media__main">
+              <div class="product_media__main__nav nav--left" data-type="previous-btn">
+                <i class="fa-solid fa-chevron-left fa product_media__main__nav__arrow nav__arrow--left"></i>
+              </div>
+              <div class="product_media__main__track__container">
+                <div class="product_media__main__track" id="product_media__main__track" data-type="track">
+                  <div class="product_media__main__slide is-active" data-type="slide">
+                    <img class="product__media__main__img" src="/assets/products/bellatrix/bellatrix_featured.png"
+                      alt="Bellatrix wand" data-type="product-image">
+                  </div>
+                  <div class="product_media__main__slide" data-type="slide">
+                    <img class="product__media__main__img" src="/assets/products/bellatrix/bellatrix_2.png"
+                      alt="Bellatrix wand" data-type="product-image">
+                  </div>
+                  <div class="product_media__main__slide" data-type="slide">
+                    <img class="product__media__main__img" src="/assets/products/bellatrix/bellatrix_3.png"
+                      alt="Bellatrix wand" data-type="product-image">
+                  </div>
+                </div>
+              </div>
+              <div class="product_media__main__nav nav--right" data-type="next-btn">
+                <i class="fa-solid fa-chevron-right fa product_media__main__nav__arrow nav__arrow--right"></i>
+              </div>
+
+            </div>
+            <div class="product__media__list flex" data-type="thumbnails-container">
+              <div class="product__media__list__item is-active" data-type="thumbnail">
+                <img src="/assets/products/bellatrix/bellatrix_featured.png" alt=""
+                  class="product__media__list__item__image" data-type="product-thumbnail">
+              </div>
+              <div class="product__media__list__item" data-type="thumbnail">
+                <img src="/assets/products/bellatrix/bellatrix_2.png" alt="" class="product__media__list__item__image"
+                  data-type="product-thumbnail">
+              </div>
+              <div class="product__media__list__item" data-type="thumbnail">
+                <img src="/assets/products/bellatrix/bellatrix_3.png" alt="" class="product__media__list__item__image"
+                  data-type="product-thumbnail">
+              </div>
+            </div>
+          </div>
+          <div class="product__details">
+            <h1 class="product__title" data-type="product-title"></h1>
+            <hr class="divider--light">
+            <p class="product__price" data-type="product-price">£28.00</p>
+            <hr class="divider--light">
+            <div class="product__variants">
+              <p class="product__option__title">Model</p>
+              <div class="product__variants__model flex" datatype="variants-container">
+                <div class="product__variant" data-variant-id="4f9ba968-5f64-4fc9-bed3-e1cbb8a0216d">
+                  <input checked type="radio" class="product__variant__input" name="variant" id="bellatrix"
+                    value="bellatrix" data-type="variant-input" data-variant-id="4f9ba968-5f64-4fc9-bed3-e1cbb8a0216d">
+                  <label for="bellatrix" class="product__variant__label">
+                    <span class="product__variant__label__text">Bellatrix Lestrange</span>
+                    <span class="product__variant__thumbnail thumbnail--bellatrix"></span>
+                  </label>
+                </div>
+                <div class="product__variant" data-variant-id="24240623-0aed-4387-96a2-a7cf1a9765c6">
+                  <input type="radio" class="product__variant__input" name="variant" id="voldemort" value="voldemort"
+                    data-type="variant-input" data-variant-id="24240623-0aed-4387-96a2-a7cf1a9765c6">
+                  <label for="voldemort" class="product__variant__label">
+                    <span class="product__variant__label__text">Lord Voldemort</span>
+                    <span class="product__variant__thumbnail thumbnail--voldemort"></span>
+                  </label>
+                </div>
+                <div class="product__variant" data-variant-id="cbface2a-1e16-418a-a8b2-f0fcc129185e">
+                  <input type="radio" class="product__variant__input" name="variant" id="harry" value="harry"
+                    data-type="variant-input" data-variant-id="cbface2a-1e16-418a-a8b2-f0fcc129185e">
+                  <label for="harry"" class=" product__variant__label">
+                    <span class="product__variant__label__text">Harry Potter</span>
+                    <span class="product__variant__thumbnail thumbnail--harry"></span>
+                  </label>
+                </div>
+                <div class="product__variant" data-variant-id="ba3615cc-c729-4bad-9075-83f3435be91d">
+                  <input type="radio" class="product__variant__input" name="variant" id="ron" value="ron"
+                    data-type="variant-input" data-variant-id="ba3615cc-c729-4bad-9075-83f3435be91d">
+                  <label for="ron" class="product__variant__label">
+                    <span class="product__variant__label__text">Ron Weasley</span>
+                    <span class="product__variant__thumbnail thumbnail--ron"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <hr class="divider--light">
+
+            <button class="product__atc btn--accent btn" type="submit">Buy</button>
+
+            <div class="product__description">
+              <div class="description-content">
+                <p data-type="product-description">
+                  Add this high-quality replica to your Harry Potter collection with Bellatrix Lestrange's wand
+                  recreation, one of Voldemort’s most faithful followers. The unique wand has been sculpted from resin
+                  and measures at approximately 14 1/2” in length.
+
+                  The wand is available in a sleek, collectible wand box and features the character name with decorative
+                  paper overlay. This wand is the perfect gift for any aspiring witch or wizard or a great addition to
+                  your Harry Potter collectibles. Please note this wand is a collectible replica, and not a toy.
+
+                  Personalise your wand with bespoke engraving including your name, special dates, or even famous quotes
+                  from the beloved Harry Potter series, the perfect way to add a special touch to your wand, making it
+                  feel truly unique and personal.
+
+                  To select personalisation, enter up to 11 characters. Currently, we are only able to offer
+                  personalisation in the English alphabet. Please allow an additional 7 working days for personalised
+                  items to be dispatched.
+
+                  *Please also note that personalised items will be made especially for you, so they can only be
+                  returned if they are faulty, are not as described, or do not meet with your instructions.
+
+
+                </p>
+                <div class="gradient-overlay"></div>
+              </div>
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+
+      <!-- Agregar secciones aquí-->
+      <!-- Profile Section-->
+      <dialog class="modal">
+        <section>
+
+          <div class="modal__header">
+            <ul class="progress_tracker">
+              <li class="progress_tracker__step">
+                <div class="progress_tracker__step__text">
+                  <p>Profile</p>
+                </div>
+                <div class="progress_tracker__step__marker current"></div>
+              </li>
+
+              <li class="progress_tracker__step">
+                <div class="progress_tracker__step__text">
+                  <p>Adress</p>
+                </div>
+                <div class="progress_tracker__step__marker"></div>
+              </li>
+
+              <li class="progress_tracker__step">
+                <div class="progress_tracker__step__text">
+                  <p>Shipping</p>
+                </div>
+                <div class="progress_tracker__step__marker"></div>
+              </li>
+
+              <li class="progress_tracker__step">
+                <div class="progress_tracker__step__text progress__finish">
+                  <p>Finish</p>
+                </div>
+                <div class="progress_tracker__step__marker"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="profile form__container">
+          <h2 class="form__title title">Profile</h2>
+          <div id="error"></div>
+          <form data-form="profile" action="" class="form__form_profile form" method="dialog" data-type="form">
+            <div class="form__inner__container">
+              <div class="input__container">
+                <input type="text" id="username" name="username" autofocus class="form__input__text form__input"
+                  placeholder="Username" minlength="5" maxlength="20" aria-label="Username" data-input="user-name">
+                <div class="input__message__container"></div>
+              </div>
+              <div class="input__container">
+                <input type="email" class="form__input__email form__input" placeholder="Email" aria-label="Email"
+                  data-input="email">
+                <div class="input__message__container"></div>
+              </div>
+              <div class="input__container">
+                <input type="password" id="password" name="password" class="form__input__password form__input"
+                  placeholder="Password" aria-label="Password" data-input="password">
+                <div class="input__message__container"></div>
+              </div>
+              <!-- al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número-->
+              <div class="input__container">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password"
+                  class="form__input__confirm form__input" aria-label="Confirm Password" data-input="confirm-password">
+                <div class="input__message__container"></div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button data-type="clearBtn" class="footer__btn--clear btn--accent btn large">Clear All</button>
+              <button type="submit" class="footer__btn--next btn--accent btn">Next</button>
+            </div>
+          </form>
+        </section>
+
+
+        <!-- Address Section -->
+
+        <section class="address form__container">
+
+
+          <form id="form" action="#" class="form__form_address form" method="dialog" data-type="form"
+            data-form="address">
+            <h2 class="form__title_address title form__title">Address</h2>
+            <div class="form__inner__container__address">
+              <div class="form__column">
+                <div class="input__container">
+                  <input type="text" class="form__input__text form__input" name="fname" id="fname"
+                    placeholder="First Name" aria-label="First Name" data-input="first-name">
+                  <div class="input__message__container"></div>
+                </div>
+                <div class="input__message__container"></div>
+                <div class="input__container">
+                  <input type="text" class="form__input__text form__input" id="lname" name="lname"
+                    placeholder="Last Name" aria-label="Last Name" data-input="last-name">
+                  <div class="input__message__container"></div>
+                </div>
+
+                <div class="input__container">
+                  <input type="date" class="form__input__date form__input" id="bday" name="bday" placeholder="Birthday"
+                    aria-label="Birthday" data-input="birthday">
+                  <div class="input__message__container"></div>
+                </div>
+
+                <div class="input__container">
+                  <input type="text" class="form__input__text form__input" id="address1" name="address1"
+                    placeholder="Address 1" aria-label="Address 1" data-input="address1">
+                  <div class="input__message__container"></div>
+                </div>
+
+                <div class="input__container">
+                  <input type="text" class="form__input__text form__input" id="address2" name="address2"
+                    placeholder="Address 2" aria-label="Address 2" data-input="address2">
+                  <div class="input__message__container"></div>
+                </div>
+              </div>
+
+              <div class="form__column">
+                <div class="input__container">
+                  <input type="number" class="form__input__text form__input" id="postal_code" name="postal_code"
+                    placeholder="Postal Code" aria-label="Postal Code" data-input="postal-code">
+                  <div class="input__message__container"></div>
+                </div>
+
+                <div class="input__container">
+                  <label for="country" class="form__label">Country</label>
+                  <select name="country" id="country" class="form__input__select form__input" aria-label="Country">
+                    <option value="spain" label="Spain">Spain</option>
+                    <option value="france" label="France">France</option>
+                    <option value="italy" label="Italy">Italy</option>
+                    <option value="germany" label="Germany">Germany</option>
+                    <option value="uk" label="United Kingdom"> UK </option>
+                  </select>
+                </div>
+
+                <div class="input__container">
+                  <div class="ph">
+                    <select name="countryCode" class="countryCode__number" aria-label="Country Code">
+                      <option selected value="spain">+34 ESP</option>
+                      <option value="france">+33 FRA</option>
+                      <option value="italy">+39 ITL</option>
+                      <option value="germany">+49 DEU</option>
+                      <option value="uk">+44 UK</option>
+                    </select>
+                    <div id="grupo__phone">
+                      <input class="number form__input" type="tel" name="ph" placeholder="Phone number"
+                        aria-label="Phone number" data-input="phone">
+                      <div class="input__message__container"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input__container checkbox_container_address">
+                  <label for="regular_address">
+                    <div class="checkbox_custom">
+                      <input type="checkbox" id="regular_address" name="regular_address" value="regular_address"
+                        class="form__input__checkbox" aria-label="Regular Address">
+                      <div class="checkbox_custom__icon">
+                        <img src="assets/lightning.png" alt="lightning" id="address_lightning_image">
+                      </div>
+                    </div>
+                    <span class="checkbox_custom__label">This is my regular address</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button data-type="clearBtn" class="footer__btn--clear btn--accent btn large">Clear All</button>
+              <button type="submit" class="footer__btn--next btn--accent btn">Next</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Shipping Section -->
+
+
+
+        <section class="form__ship form__container">
+
+          <form action="" class="form__form form" method="dialog" data-type="form" data-form="shipping">
+            <h2 class="form__title_shipping title form__title">Shipping</h2>
+            <div class="form__inner__container form__ship__inner__container">
+              <p>Shipping type</p>
+              <div class="input__container">
+                <div class="radio">
+                  <input type="radio" id="free" name="shipping-method" value="free" class="form__radio">
+                  <label for="free" class="form__ship">Free shipment (72h)</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" id="extra" name="shipping-method" value="extra" class="form__radio">
+                  <label for="extra" class="form__ship">Extra Shipping (48h) <b>£4,99</b></label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="premium" name="shipping-method" value="premium" class="form__radio">
+                  <label for="premium" class="form__ship">Premium (24h) <b>£9,99</b></label>
+                </div>
+                <div class="input__message__container"></div>
+              </div>
+              <div class="order_text">
+              </div>
+
+              <div class="checkbox_container input__container">
+                <label for="gift">
+                  <div class="checkbox_custom">
+                    <input type="checkbox" id="gift" name="gift" value="gift" class="form__input_checkbox"
+                      aria-label="Is it a gift?">
+                    <div class="checkbox_custom__icon">
+                      <img src="assets/lightning.png" alt="lightning" id="gift_lightning_image">
+                    </div>
+                  </div>
+                  <span class="checkbox_custom__label">Is it a gift?</span>
+                </label>
+              </div>
+
+
+              <div id="giftFields" style="display: none;" class="input__container">
+                <label for="gift_text" class="form__label">Gift Message:</label>
+                <textarea id="gift_text" name="gift_text" rows="1" cols="37" maxlength="200"
+                  class="form__input form__input__textarea" aria-label="Gift Message"></textarea>
+
+                <label for="img" class="form__label">Gift wrapper image:</label>
+                <input type="file" id="img" name="img" accept="image/*" class="form__input form__input__file"
+                  aria-label="Gift Wrapper Image">
+              </div>
+            </div>
+            <div class="modal__footer">
+              <button data-type="clearBtn" class="footer__btn--clear btn--accent btn large">Clear All</button>
+              <button type="submit" class="footer__btn--next btn--accent btn">Next</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Finish Section -->
+        <section class="finish hidden form__container">
+
+          <div class='complete_order'>
+            <h1 class='complete_order__title title'>Thank you for your order!</h1>
+            <p class="complete_order__info">Your order has been received successfully. </p>
+          </div>
+
+          <div class="order_details_and_img">
+            <div class="order_details">
+              <p class="order_details__title title">Order details</p>
+              <p class="order_details__product"><b>Product name:</b> <span id="orderProductTitle"></span></p>
+              <p class="order_details__shipping"><b>Shipping:</b> <span id="shippingPrice"></span></p>
+              <p class="order_details__total"><b>Total:</b> <span id="totalPrice"></span></p>
+            </div>
+
+            <img src="" class="order_details__product_img product__media__main__img" id="orderProductImg">
+          </div>
+
+          <div class="order_info">
+            <h2 class="order_info__title title">Your order</h2>
+            <div class="order_info__container">
+              <p class="order_info__product"><span id="orderInfoProductTitle"></span></p>
+              <p class="order_info__product_price"><span id="orderInfoProductPrice"></span></p>
+              <p class="order_info__estimate_date">ESTIMATED DELIVERY DATE</p>
+              <p class="order_info__delivery_date">Your order will arrive between <b>date1</b> and <b>date2</b></p>
+            </div>
+            <div class="checkbox_container_finish">
+
+              <label for="terms_checkbox">
+                <div class="checkbox_custom">
+                  <div class="input__container">
+                    <input type="checkbox" id="terms_checkbox" class="form__input_checkbox" data-input="terms" required>
+                    <div class="input__message__container"></div>
+                  </div>
+                  <div class="checkbox_custom__icon">
+                    <img src="assets/lightning.png" alt="lightning" id="lightning_image">
+                  </div>
+                </div>
+                <span class="checkbox_custom__label">I agree to the terms and conditions.</span>
+              </label>
+            </div>
+            <button type="submit" id="finish_button" class="btn--accent btn large_checkout" disabled>Checkout</button>
+          </div>
+
+          <div class="registration_time">
+            <p>Your registration took: <b id="registration_timer">1 minute</b></p>
+          </div>
+
+
+        </section>
+
+        <div class="alarm" id="custom_alarm"></div>
+      </dialog>
+    </div>
+    <div id="gifContainer">
+      <img id="gifImage" src='assets/worm.gif' alt="GIF" />
+    </div>
+  </main>
+</body>
+
+</html>
